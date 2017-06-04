@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#app-prev-css{
+    width: 380px;
+    overflow: hidden;
+    position: relative;
+}
+#app-prev-css::-webkit-scrollbar{
+    width: 0px;
+    background-color: #F5F5F5;
+}
+#app-prev-css .tips{
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    opacity: .4;
+    border-radius: 4px;
+}
+#app-prev-css .header{
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    background-color: #879FA0;
+    background: -moz-linear-gradient(left, #4FC08D 0, #086CAF 100%);
+    background: -webkit-linear-gradient(left, #4FC08D 0, #086CAF 100%);
+    background: -o-linear-gradient(left, #4FC08D 0, #086CAF 100%);
+    background: -ms-linear-gradient(left, #4FC08D 0, #086CAF 100%);
+    background: linear-gradient(to left, #4FC08D 0, #086CAF 100%);
+}
+#app-prev-css .prev-box{
+    height: 70px;
+    padding-top: 15px;
+}
+#app-prev-css .prev-box div{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #c33;
+    border-radius: 4px;
+    background: url('../img/prev.png') no-repeat;
+    background-size: cover;
+}
+#app-prev-css .select-line{
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /*text-align: center;*/
+}
+#app-prev-css .select-line select{
+    width: 300px;
+    height: 30px;
+    line-height: 30px;
+    outline: none;
+    border: 1px solid #eee;
+    color: #666;
+    cursor: pointer;
+    padding-left: 10px;
+}
+#app-prev-css .select-line button{
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    color: #666;
+    border: 1px solid #eee;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+[v-cloak]{
+    display: none;
+}
+#app-prev-css .prev-css{
+    min-height: 400px;
+    padding-left: 4px;
+    padding-top: 10px;
+}
+#app-prev-css .prev-css div{
+    /*font-size: 14px;*/
+    color: #999;
+}
+#app-prev-css .prev-css span{
+    display: inline-block;
+
+}
+#app-prev-css .space,
+#app-prev-css .space2{
+    display: inline-block;
+}
+#app-prev-css .space{
+    padding-left: 8px;
+}
+#app-prev-css .space2{
+    padding-left: 16px;
+}

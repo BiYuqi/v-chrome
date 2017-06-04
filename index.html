@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="dist/style.css">
+    </head>
+    <body>
+        <div id="app-prev-css">
+            <div class="header">Prev CSS3 Animate.css</div>
+            <div class="prev-box">
+                <div :class="[activeClass, errorClass]"></div>
+            </div>
+            <div class="select-line">
+                <select v-model="selected">
+                    <option v-for="(option,index) in options" :value="option">{{option}}</option>
+                </select>
+                <button type="button" @click="copyTips" class="copy-btn" data-clipboard-target="#copyCss">复制</button>
+            </div>
+            <div class="prev-css" v-html="cssText" id="copyCss" v-cloak>{{cssText}}</div>
+            <div class="tips" v-show="isShow" v-cloak>复制成功！</div>
+        </div>
+        <script src="dist/bundle.js"></script>
+    </body>
+</html>
